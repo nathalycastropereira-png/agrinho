@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Urbana Inteligente - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌱 Horta Urbana Inteligente</h1>
+        <p>Trazendo a tecnologia e o campo para dentro da sua casa!</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="card">
+            <h2>Por que ter uma Horta Urbana?</h2>
+            <p>Cultivar em casa reduz o desperdício, garante alimentos mais saudáveis (sem agrotóxicos) e conecta as cidades com o ciclo da natureza, um dos grandes pilares do Agrinho 2026.</p>
+        </section>
+
+        <section class="card">
+            <h2>📅 Calendário Rápido de Plantio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Planta</th>
+                        <th>Espaço Necessário</th>
+                        <th>Sol Diário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alface</td>
+                        <td>Pequeno (Vasos)</td>
+                        <td>4 a 6 horas</td>
+                    </tr>
+                    <tr>
+                        <td>Tomate Cereja</td>
+                        <td>Médio (Vasos fundos)</td>
+                        <td>Mínimo 6 horas</td>
+                    </tr>
+                    <tr>
+                        <td>Hortelã / Tempero</td>
+                        <td>Pequeno (Floreiras)</td>
+                        <td>3 a 4 horas (Meia sombra)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card quiz-section">
+            <h2>🔍 Descubra sua Planta Ideal</h2>
+            <p>Quanto tempo de sol direto bate no local da sua futura horta?</p>
+            
+            <div class="options">
+                <button onclick="verificarPlanta('pouco')">Pouco sol (menos de 4h)</button>
+                <button onclick="verificarPlanta('medio')">Sol moderado (4h a 6h)</button>
+                <button onclick="verificarPlanta('muito')">Muito sol (mais de 6h)</button>
+            </div>
+
+            <div id="resultado" class="resultado-box hidden">
+                </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto Desenvolvido para o Concurso Agrinho 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
